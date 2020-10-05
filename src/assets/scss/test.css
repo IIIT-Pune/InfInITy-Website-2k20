@@ -1,14 +1,13 @@
 .container-snap{
   overflow: scroll;
-  overflow-x: hidden;
-  height: 100%;
-  scroll-snap-type: y mandatory;
+overflow-x: hidden;
+height: 100%;
+  scroll-snap-type:y proximity;
   /* Reserve space for header and additional space so above page are visible a bit*/ 
-  /* scroll-padding-top:  calc(var(--bar-height) + var(--extra-space)); */
+  scroll-padding-bottom:  25px;
 
   position: absolute;
 
-  top:0;
   bottom:0;
   left: 0;
   right: 0;

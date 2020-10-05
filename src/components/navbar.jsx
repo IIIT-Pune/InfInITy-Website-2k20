@@ -24,9 +24,9 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink className="--item" to="/livestats">
+          <NavLink className="--item" to="/ourteam">
             <img src={require("../assets/img/asset_3.png")} alt="" />
-            <div>Live Stats</div>
+            <div>Our Team</div>
           </NavLink>
         </li>
         <li>
