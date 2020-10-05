@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../assets/scss/pages.scss';
 import "../assets/scss/test.css";
 import Footer from './footerComponent';
+import LiveStatsComponent from './LiveStatsComponent';
 import Registration from "./registration";
 class Home extends Component {
   constructor(props) {
@@ -43,6 +44,9 @@ class Home extends Component {
         </div>
         <div className="wrapper-snap">
           <Registration />
+        </div>
+        <div className="wrapper-snap">
+          <LiveStatsComponent />
         </div>
         <div className="wrapper-snap">
           <div className="home cont">
