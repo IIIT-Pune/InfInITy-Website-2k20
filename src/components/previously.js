@@ -66,13 +66,13 @@ class Previously extends Component {
                   </ul>
                 </p>
                 <p>
-                  <strong>Sample Input</strong>:
+                  <strong>Example :</strong>:<p>Input: </p>
                   <ul style={{ marginLeft: '20px' }}>
                     2 <br />6 2 5 3<br /> 12 3 4 2
                   </ul>
                 </p>
                 <p>
-                  <strong>Sample Output</strong>:
+                  <p>Output: </p>
                   <ul style={{ marginLeft: '20px' }}>
                     YES <br /> NO{' '}
                   </ul>
