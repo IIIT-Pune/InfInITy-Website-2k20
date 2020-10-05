@@ -23,8 +23,8 @@ class Main extends Component {
           <Route exact path='/feedback' component={() => <FeedbackModal />} />
           <Route
             exact
-            path='/registration'
-            component={() => <Registration />}
+            path='/ourteam'
+            component={() => <Ourteam />}
           />
           <Route exact path='/halloffame' component={() => <Hall />} />
           <Route exact path='/example' component={() => <FeedbackModal />} />
