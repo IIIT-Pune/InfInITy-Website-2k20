@@ -1,0 +1,166 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  $navbg: #013277;
+  $textc: #fff;
+
+  color: $textc;
+  background-color: $navbg;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.31);
+
+  padding: 0 2rem;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+
+  :link,
+  :visited {
+    color: $textc;
+    text-decoration: none;
+  }
+
+  .--item {
+    height: fit-content;
+    display: flex;
+    padding: 0.8rem;
+    margin: 0rem;
+    position: relative;
+    font-weight: 400;
+    // transition: 0.1s linear;
+
+    img {
+      height: 1.5rem;
+      transform: translateY(-0.1rem);
+      // padding-right: 0.5rem;
+      filter: brightness(0.9);
+    }
+
+    div {
+      padding-left: 0.5rem;
+      color: #c7c7c7;
+      white-space: nowrap;
+    }
+
+    &:not(.active):hover {
+      text-shadow: 0 0 0.65px $textc, 0 0 0.65px $textc;
+
+      img {
+        filter: brightness(1.3);
+      }
+
+      div {
+        color: $textc;
+      }
+    }
+
+    &.active {
+      text-shadow: 0 0 0.65px $textc, 0 0 0.65px $textc;
+
+      div {
+        color: $textc;
+      }
+
+      img {
+        filter: brightness(1.4) drop-shadow(0px 0px 5px rgb(0, 195, 255));
+      }
+    }
+
+    &.logo {
+      img {
+        height: 1.5rem;
+        transform: translateY(-0.1rem);
+        filter: brightness(1.4);
+      }
+    }
+  }
+
+  .logo-con {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .--item {
+    div {
+      display: none;
+    }
+
+    &.active div {
+      display: inline;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  nav {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+  }
+
+  .navbar {
+    padding: 0 1rem;
+    // position: fixed;
+    // bottom: 0;
+    // top: auto;
+    justify-content: space-around;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.31);
+
+    .logo-con {
+      margin: 0;
+    }
+
+    .--item {
+      font-size: 1.1rem;
+
+      div {
+        display: none !important;
+      }
+
+      &.logo {
+        img {
+          filter: brightness(1);
+        }
+      }
+
+      &.logo.active {
+        img {
+          filter: brightness(1.4) drop-shadow(0px 0px 5px rgb(0, 195, 255));
+        }
+      }
+    }
+
+    :nth-child(1) {
+      order: 3;
+    }
+
+    :nth-child(2) {
+      display: none;
+    }
+
+    :nth-child(3) {
+      order: 1;
+    }
+
+    :nth-child(4) {
+      order: 2;
+    }
+
+    :nth-child(5) {
+      order: 4;
+    }
+
+    :nth-child(6) {
+      order: 5;
+    }
+  }
+}
