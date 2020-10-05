@@ -1,0 +1,175 @@
+.mparent {
+  $font-monospace: 'Source Code Pro', sans-serif;
+  $font-sans: 'Source Code Pro', monospace;
+  $font-awesome: 'Font Awesome 5 Free';
+
+  $base-duration: 250ms;
+
+  // Colors
+  $primary: #f1c40f;
+  $accent: #46627f;
+  $white: whitesmoke;
+
+  $max-width: 1200px;
+  // Breakpoints
+  $sm: 20rem;
+  $med: 48rem;
+  $lg: 64rem;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-smooth: auto;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #444;
+  }
+  .row {
+    margin-bottom: 50px;
+  }
+
+  body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #34495e;
+  }
+
+  a {
+    text-decoration: none;
+    margin: auto;
+  }
+
+  figure {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 290px;
+    height: 230px;
+    padding: 20px 20px;
+    background-image: url('https://images.pexels.com/photos/1368382/pexels-photo-1368382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      //font-family: $font-awesome;
+    }
+    &:before {
+      content: '';
+      background-color: rgba(black, 0.1);
+      z-index: 0;
+    }
+    &:after {
+      content: '';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      overflow: hidden;
+    }
+    &:hover {
+      background-size: 175%;
+      &:after {
+        content: '♣︎';
+        background-color: rgba($primary, 0.9);
+        color: white;
+        font-size: 72px;
+        z-index: 2;
+      }
+      .date {
+        bottom: -59px;
+      }
+      figcaption {
+        transform: translateY(-110%);
+      }
+    }
+    .date {
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      background-color: rgba($primary, 0.8);
+      text-shadow: 1px 1px rgba(black, 0.7);
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      span {
+        color: white;
+        line-height: 1;
+        &:first-child {
+          font-family: $font-monospace;
+          font-size: 20px;
+          font-weight: 900;
+        }
+        &:last-child {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+    figcaption {
+      color: white;
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      z-index: 1;
+      h4 {
+        margin: 0 0 5px;
+        font-family: $font-monospace;
+        font-size: 24px;
+        line-height: 1.35;
+        text-shadow: 1px 1px rgba(black, 0.7);
+        > span {
+          background-color: rgba($primary, 0.8);
+        }
+      }
+      p {
+        margin: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.textparent {
+  .fancy-heading {
+    font-size: 160px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 5px;
+  }
+
+  .animated_heading {
+    margin: 0;
+    font-size: 80px;
+    color: #fff;
+    background-size: auto 200%;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 8s linear infinite;
+  }
+}

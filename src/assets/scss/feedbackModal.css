@@ -1,0 +1,78 @@
+/* Base styles */
+.usrp-fb-1 {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  z-index: 1;
+  max-width: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon background */
+.usrp-fb-1 i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+/* Transitions */
+.usrp-fb-1 i,
+.usrp-fb-1 .usrp-fb-title {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* Icon */
+.usrp-fb-1 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.usrp-fb-1 svg .fill {
+  fill: #ffffff;
+}
+
+/* Text */
+.usrp-fb-1 .usrp-fb-title {
+  display: block;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0);
+  line-height: 50px;
+  padding: 0 15px 0 65px;
+  white-space: nowrap;
+  background: #2a99f8;
+}
+
+/* Hover / Slide in */
+.usrp-fb-1:hover,
+.usrp-fb-1.slide-in {
+  max-width: 200px;
+}
+
+.usrp-fb-1:hover i,
+.usrp-fb-1.slide-in i {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.usrp-fb-1:hover .usrp-fb-title,
+.usrp-fb-1.slide-in .usrp-fb-title {
+  color: #ffffff;
+}

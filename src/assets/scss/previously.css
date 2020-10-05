@@ -1,0 +1,57 @@
+.codemonk-problem-interface.fullscreen-problem .fullscreen-problem-description {
+  top: 60px;
+  left: 0;
+  height: calc(100% - 60px);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+.assessment-problem-description.fullscreen-problem-description {
+  top: 52px;
+  padding: 20px 15px;
+}
+.problem-description {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 10px 0 40px;
+  background-color: #fff;
+}
+.fullscreen-problem-description {
+  margin: 0 !important;
+}
+.fullscreen-problem-description {
+  left: 0;
+  background-color: #fafafa;
+  z-index: 990;
+  margin: 0;
+  overflow: auto;
+  padding: 0 15px 20px;
+}
+.fullscreen-editor,
+.fullscreen-problem-description {
+  top: 0;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.problem-description {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 10px 0 40px;
+  background-color: #fff;
+}
+.medium-margin-bottom {
+  margin-bottom: 20px;
+}
+.weight-700 {
+  font-weight: 700;
+}
+.dark {
+  color: #46535e;
+}
+.large {
+  font-size: 16px;
+}
+.dark {
+  color: #46535e;
+}

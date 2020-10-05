@@ -3,7 +3,9 @@ import { Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 import axios from 'axios';
 import { baseUrl } from '../shared/baseUrl';
-
+import '../assets/scss/feedbackModal.css';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function ValidationMessage(props) {
   if (!props.valid) {
     return <div className='error-msg'>{props.message}</div>;
@@ -79,13 +81,35 @@ class FeedbackModal extends Component {
     return (
       <div>
         <>
-          <Button
+          {/* <Button
             style={{ backgroundColor: '#32e0c4' }}
             type='button'
             onClick={() => this.setModalOpen(!this.state.modalOpen)}
           >
             Give Feedback
-          </Button>
+          </Button> */}
+
+          <div class='usrp-fb-1'>
+            <i>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path
+                  fill-rule='evenodd'
+                  d='M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z'
+                  clip-rule='evenodd'
+                />
+              </svg>
+            </i>
+            <div
+              class='usrp-fb-title'
+              onClick={() => this.setModalOpen(!this.state.modalOpen)}
+            >
+              Give Feedback
+            </div>
+          </div>
 
           <Modal
             toggle={() => this.setModalOpen(!this.state.modalOpen)}
@@ -170,9 +194,6 @@ class FeedbackModal extends Component {
                 onClick={() => this.setModalOpen(!this.state.modalOpen)}
               >
                 Close
-              </Button>
-              <Button color='primary' type='button'>
-                Save changes
               </Button>
             </ModalFooter>
           </Modal>
