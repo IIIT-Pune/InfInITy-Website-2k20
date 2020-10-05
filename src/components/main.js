@@ -8,6 +8,7 @@ import Previously from './previously';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import QuesCard from './questioncards';
 import Hall from './hof';
+import Ourteam from './Ourteam';
 
 class Main extends Component {
   render() {
@@ -18,8 +19,8 @@ class Main extends Component {
           <Route exact path='/feedback' component={() => <FeedbackModal />} />
           <Route
             exact
-            path='/registration'
-            component={() => <Registration />}
+            path='/ourteam'
+            component={() => <Ourteam />}
           />
           <Route exact path='/halloffame' component={() => <Hall />} />
           <Route exact path='/example' component={() => <FeedbackModal />} />
