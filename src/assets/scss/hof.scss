@@ -1,0 +1,196 @@
+//____________ Hall Of Fame ____________
+
+.halloffame {
+  background-color: rgb(44, 29, 6);
+  background-image: url('../img/hof.png');
+  background-attachment: fixed;
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 96vh;
+  width: 100vw;
+  color: rgb(175, 175, 175);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+
+  .cont {
+    // min-width: max-content;
+    max-height: min-content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fffdf9;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 2px 19px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+    h3 {
+      color: #635e5e;
+    }
+
+    h4 {
+      color: rgba(0, 0, 0, 0.39);
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+    }
+
+    .winner {
+      color: rgb(71, 71, 71);
+      width: 100%;
+      padding: 0.3rem 0.5rem;
+      position: relative;
+      margin: 1rem 0;
+      width: 32ch;
+      display: grid;
+      grid-template-columns: 6rem auto;
+      column-gap: 3rem;
+
+      .profile {
+        border-radius: 999px;
+        height: 6rem;
+        width: 6rem;
+        // margin-right: 3rem;
+        grid-row: 1 / span 2;
+      }
+
+      .meta {
+        text-align: left;
+        display: inline;
+        margin-right: auto;
+
+        &::after {
+          content: "'17";
+          font-family: 'Poppins', sans-serif;
+
+          position: absolute;
+          right: 0;
+          top: 1rem;
+          // margin-left: -2rem;
+          font-size: 4rem;
+          font-weight: 700;
+          color: rgba(20, 20, 20, 0.08);
+        }
+
+        &#eighteen::after {
+          content: "'18";
+        }
+
+        &#nineteen::after {
+          content: "'19";
+        }
+      }
+
+      .social {
+        display: block;
+        transition: all 0.2s ease;
+        visibility: hidden;
+        opacity: 0;
+        text-align: left;
+
+        a img {
+          margin: 1rem 0rem;
+          margin-right: 0.4rem;
+          height: 1.4rem;
+          transition: all 0.2s ease;
+
+          &:hover {
+            filter: drop-shadow(0 0 0 black);
+          }
+        }
+      }
+
+      &:hover .social {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &:hover .meta::after {
+        filter: drop-shadow(0 0 0 black);
+      }
+    }
+
+    &.world {
+      order: 2;
+      z-index: 10;
+      background-color: #fffefd;
+    }
+
+    &.iiitp {
+      order: 3;
+      z-index: 1;
+      margin-left: -0.5rem;
+      margin-bottom: -6rem;
+    }
+
+    &.india {
+      order: 1;
+      z-index: 1;
+      margin-right: -0.5rem;
+      margin-bottom: -6rem;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .halloffame {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .cont {
+      width: 43ch;
+      &.india,
+      &.world,
+      &.iiitp {
+        margin: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      &.world {
+        order: 1;
+        // margin: auto;
+      }
+
+      &.india {
+        order: 2;
+      }
+
+      // margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .halloffame .cont {
+    &.india,
+    &.world,
+    &.iiitp {
+      margin-bottom: 1rem;
+    }
+
+    &.world {
+      margin-top: 3rem;
+    }
+
+    .winner {
+      grid-template-columns: 4rem auto;
+
+      .profile {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      .social {
+        visibility: visible !important;
+        opacity: 1;
+      }
+    }
+  }
+}
