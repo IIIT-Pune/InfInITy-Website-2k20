@@ -5,9 +5,10 @@ import Home from './home';
 import Registration from './registration';
 import Footer from './footerComponent';
 import Previously from './previously';
-import feedbackModal from './feedbackModal';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import QuesCard from './questioncards';
+import Hall from './hof';
+
 class Main extends Component {
   render() {
     return (
@@ -20,10 +21,11 @@ class Main extends Component {
             path='/registration'
             component={() => <Registration />}
           />
+          <Route exact path='/halloffame' component={() => <Hall />} />
           <Route exact path='/example' component={() => <FeedbackModal />} />
           <Route exact path='/' component={() => <Home />} />
           <Route exact path='/quescard' component={() => <QuesCard />} />
-          <Redirect to="/"/>
+          <Redirect to='/' />
         </Switch>
       </div>
     );
