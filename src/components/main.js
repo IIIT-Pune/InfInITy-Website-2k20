@@ -5,9 +5,11 @@ import Home from './home';
 import Registration from './registration';
 import Footer from './footerComponent';
 import Previously from './previously';
-import feedbackModal from './feedbackModal';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import QuesCard from './questioncards';
+import Hall from './hof';
+import Ourteam from './Ourteam';
+
 class Main extends Component {
   render() {
     const ShowwithId = ({ match }) => {
@@ -19,15 +21,12 @@ class Main extends Component {
         <Switch location={this.props.location}>
           <Route exact path='/livestats' component={() => <LiveStats />} />
           <Route exact path='/feedback' component={() => <FeedbackModal />} />
-          <Route
-            exact
-            path='/registration'
-            component={() => <Registration />}
-          />
+          <Route exact path='/ourteam' component={() => <Ourteam />} />
           <Route exact path='/questions/:code' component={ShowwithId} />
 
           <Route exact path='/' component={() => <Home />} />
           <Route exact path='/quescard' component={() => <QuesCard />} />
+          <Redirect to='/' />
         </Switch>
       </div>
     );
