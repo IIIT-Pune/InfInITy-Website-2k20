@@ -21,13 +21,11 @@ class Main extends Component {
         <Switch location={this.props.location}>
           <Route exact path='/livestats' component={() => <LiveStats />} />
           <Route exact path='/feedback' component={() => <FeedbackModal />} />
-          <Route
-            exact
-            path='/ourteam'
-            component={() => <Ourteam />}
-          />
+          <Route exact path='/ourteam' component={() => <Ourteam />} />
           <Route exact path='/halloffame' component={() => <Hall />} />
           <Route exact path='/example' component={() => <FeedbackModal />} />
+          <Route exact path='/questions/:code' component={ShowwithId} />
+
           <Route exact path='/' component={() => <Home />} />
           <Route exact path='/quescard' component={() => <QuesCard />} />
           <Redirect to='/' />
