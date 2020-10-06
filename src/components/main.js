@@ -12,6 +12,10 @@ import Ourteam from './Ourteam';
 
 class Main extends Component {
   render() {
+    const ShowwithId = ({ match }) => {
+      let quesid = match.params.code;
+      return <Previously code={quesid} />;
+    };
     return (
       <div>
         <Switch location={this.props.location}>

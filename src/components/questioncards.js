@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import '../assets/scss/questioncard.scss';
+import questions from '../shared/Questions_2k19';
 
 class QuesCard extends Component {
   constructor(props) {
     super(props);
   }
+
   render() {
+    console.log(questions);
     return (
       <div style={{ backgroundColor: '#FFFFCC' }}>
         <div class='textparent'>
@@ -18,151 +21,41 @@ class QuesCard extends Component {
                     'url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/musico/demo/wp-content/uploads/2018/10/ruvim-noga-711147-unsplash.jpg)',
                 }}
               >
-                2017
+                2019
               </h1>
             </div>
           </div>
         </div>
         <div class='mparent'>
           <div class='row justify-content-center'>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
+            {questions.map((obj) => {
+              return (
+                <div class='col-lg-3' style={{ padding: '60px' }}>
+                  <a href='#'>
+                    <figure
+                      onClick={(event) => {
+                        var urlnew = '/questions/' + obj.code;
+                        return (window.location.href = urlnew);
+                      }}
+                    >
+                      <figcaption>
+                        <h4>
+                          {' '}
+                          <span>Problem Code: {obj.code}</span>
+                        </h4>
+                        <p>{obj.heading}</p>
+                        <p style={{ fontWeight: 'bolder' }}>
+                          Successfull Submissions : {obj.successfulSub}
+                        </p>
+                        <p style={{ fontWeight: 'bolder' }}>
+                          Accuracy : {obj.accuracy}
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </a>
                 </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
-                </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
-                </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
-                </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class='row justify-content-center'>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
-                </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
-                </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
-                </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
-            <a href='#'>
-              <figure>
-                <div class='date'>
-                  <span class='card-date-day'>20</span>
-                  <span class='card-date-month'>APR</span>
-                </div>
-                <figcaption>
-                  <h4>
-                    {' '}
-                    <span>Problem Code: TREE2</span>
-                  </h4>
-                  <p>A Problem on Sticks</p>
-                  <p>Successfull Submissions : 1712</p>
-                  <p>Accuracy : 28.04</p>
-                </figcaption>
-              </figure>
-            </a>
+              );
+            })}
           </div>
         </div>
       </div>
