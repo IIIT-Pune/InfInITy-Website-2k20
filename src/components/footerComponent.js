@@ -12,7 +12,7 @@ class Footer extends Component {
           <div class='footer-top'>
             <div class='container'>
               <div class='row'>
-                <div class='col-lg-4 col-md-6'>
+                <div class='col-lg-6 '>
                   <div class='footer-info'>
                     <h3>InfInIty 2k20 !</h3>
                     <p class='pb-3'>
@@ -47,39 +47,29 @@ class Footer extends Component {
                   </div>
                 </div>
 
-                <div class='col-lg-3 col-md-6 footer-links'>
+                <div class='col-lg-5 footer-links '>
                   <h4>Useful Links</h4>
                   <ul>
-                    <li>
+                    <li class='footlink'>
                       <i class='bx bx-chevron-right'></i> <a href='#'>Home</a>
                     </li>
-                    <li>
+                    <li class='footlink'>
                       <i class='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Registration</a>
                     </li>
-                    <li>
+                    <li class='footlink'>
                       <i class='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Live Stats</a>
                     </li>
-                    <li>
+                    <li class='footlink'>
                       <i class='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Previous Year Question Set</a>
                     </li>
-                    <li>
+                    <li class='footlink'>
                       <i class='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Hall of Fame</a>
                     </li>
                   </ul>
-                </div>
-
-                <div class='col-lg-3 col-md-6 footer-newsletter '>
-                  <h4 class='feedbackheading'>Feedback</h4>
-                  <p style={{ marginRight: '62px' }}>
-                    We would love to hear from you !
-                  </p>
-                  <p style={{ marginLeft: '20px' }}>
-                    <FeedbackModal />
-                  </p>
                 </div>
               </div>
             </div>

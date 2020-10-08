@@ -15,6 +15,7 @@ const questions = [
     successfulSub: `762`,
     accuracy: `55.26`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1908`,
+    url: `https://images.unsplash.com/photo-1570449041836-d29d89a22bc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80`,
   },
 
   {
@@ -47,6 +48,7 @@ const questions = [
     successfulSub: `308`,
     accuracy: `27.22`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1912`,
+    url: `https://images.unsplash.com/photo-1531777319985-9dca28eeae64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1023&q=80`,
   },
   {
     code: `INF1910`,
@@ -73,6 +75,7 @@ const questions = [
     successfulSub: `150`,
     accuracy: `31.8`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1910`,
+    url: `https://images.unsplash.com/photo-1560441649-a628a493903f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80`,
   },
   {
     code: `INF1900`,
@@ -106,6 +109,7 @@ const questions = [
     successfulSub: `29`,
     accuracy: `9.21`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1900`,
+    url: `https://images.unsplash.com/photo-1529248236319-f679e0ba552d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=942&q=80`,
   },
   {
     code: `INF1902`,
@@ -132,6 +136,7 @@ const questions = [
     successfulSub: `15`,
     accuracy: `21.43`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1902`,
+    url: `https://images.unsplash.com/photo-1529789659325-598a5a0fd154?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80`,
   },
   {
     code: `INF1906`,
@@ -203,6 +208,7 @@ const questions = [
     successfulSub: `8`,
     accuracy: `18.6`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1906`,
+    url: `https://images.unsplash.com/photo-1572560719854-04f478ba569b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=312&q=80`,
   },
   {
     code: `INF1914`,
@@ -271,6 +277,7 @@ const questions = [
     successfulSub: `8`,
     accuracy: `32`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1914`,
+    url: `https://images.unsplash.com/photo-1567629780805-fa1fd8bcedda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80`,
   },
   {
     code: `INF1904`,
@@ -345,6 +352,7 @@ const questions = [
     successfulSub: `3`,
     accuracy: `9.38`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1904`,
+    url: `https://images.unsplash.com/photo-1583922781600-6cf588783ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80`,
   },
 ];
 
