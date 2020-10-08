@@ -1,7 +1,7 @@
 /* Base styles */
 .usrp-fb-1 {
-  position: fixed;
-  top: 50px;
+  position: absolute;
+  top: 682px;
   right: 0;
   z-index: 1;
   max-width: 50px;
@@ -45,7 +45,7 @@
 }
 
 .usrp-fb-1 svg .fill {
-  fill: #ffffff;
+  fill: white;
 }
 
 /* Text */
@@ -58,7 +58,7 @@
   line-height: 50px;
   padding: 0 15px 0 65px;
   white-space: nowrap;
-  background: #2a99f8;
+  background: #3082ee;
 }
 
 /* Hover / Slide in */
@@ -69,7 +69,7 @@
 
 .usrp-fb-1:hover i,
 .usrp-fb-1.slide-in i {
-  background: rgba(0, 0, 0, 0.2);
+  background: lightcoral;
 }
 
 .usrp-fb-1:hover .usrp-fb-title,
