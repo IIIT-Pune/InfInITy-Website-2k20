@@ -101,7 +101,7 @@ class Registration extends Component {
         username: this.state.username,
         country: this.state.country,
         email: this.state.email,
-        org: this.state.org,
+        org: this.state.org
       });
       console.info('Valid Form');
     } else {
