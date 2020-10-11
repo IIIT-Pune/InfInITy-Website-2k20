@@ -6,7 +6,10 @@
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 40px 0 30px 0;
+}
+.footer-links {
+  text-align: center;
 }
 
 #footer .footer-top .footer-info {
@@ -66,13 +69,11 @@
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
-  margin-left: 100px;
 }
 
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 #footer .footer-top .footer-links ul i {
@@ -84,7 +85,7 @@
 
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
-  display: flex;
+
   align-items: center;
 }
 
