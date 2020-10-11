@@ -99,12 +99,13 @@
         color: white;
         font-size: 72px;
         z-index: 2;
+        opacity: 0.7;
       }
       .date {
         bottom: -59px;
       }
       figcaption {
-        transform: translateY(-110%);
+        // transform: translateY(-110%);
       }
     }
     .date {
