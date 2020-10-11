@@ -113,56 +113,56 @@ class Registration extends Component {
   render() {
     const { errors } = this.state;
     return (
-      <div className='registration'>
-        <div className='form-container'>
+      <div className="registration">
+        <div className="form-container">
           <img
-            id='typography'
-            src={require('../assets/img/registration.png')}
-            alt=''
+            id="typography"
+            src={require("../assets/img/registration.png")}
+            alt=""
           />
-          <span id='one'>
+          <span id="one">
             Embark on the code cooking journey off in the far lands of
             CodeChef's turf
           </span>
-          <form action='' onSubmit={this.handleSubmit} noValidate>
+          <form action="" onSubmit={this.handleSubmit} noValidate>
             <input
-              id='name'
-              name='name'
-              type='text'
-              placeholder='First Name'
+              id="name"
+              name="name"
+              type="text"
+              placeholder="First Name"
               onChange={this.handleChange}
               noValidate
             />
             {errors.name.length > 0 && (
-              <span className='error'>{errors.name}</span>
+              <span className="error">{errors.name}</span>
             )}
             <input
-              id='lastname'
-              name='lastname'
-              type='text'
-              placeholder='Last Name'
+              id="lastname"
+              name="lastname"
+              type="text"
+              placeholder="Last Name"
               onChange={this.handleChange}
               noValidate
             />
             {errors.lastname.length > 0 && (
-              <span className='error'>{errors.lastname}</span>
+              <span className="error">{errors.lastname}</span>
             )}
             <input
-              id='username'
-              name='username'
-              type='text'
-              placeholder='CodeChef Username'
+              id="username"
+              name="username"
+              type="text"
+              placeholder="CodeChef Username"
               onChange={this.handleChange}
               noValidate
             />
             {errors.username.length > 0 && (
-              <span className='error'>{errors.username}</span>
+              <span className="error">{errors.username}</span>
             )}
             <input
-              id='phone'
-              name='email'
-              type='text'
-              placeholder='Email'
+              id="phone"
+              name="email"
+              type="text"
+              placeholder="Email"
               onChange={this.handleChange}
               noValidate
             />
@@ -170,7 +170,7 @@ class Registration extends Component {
               <span className="error">{errors.email}</span>
             )}
             <div className="select">
-              <select name="country" id="country">
+              <select name="country" id="country" onChange={this.handleChange}>
                 <option value="" selected disabled hidden>
                   Select Country
                 </option>
@@ -180,20 +180,20 @@ class Registration extends Component {
               </select>
             </div>
             {errors.country.length > 0 && (
-              <span className='error'>{errors.country}</span>
+              <span className="error">{errors.country}</span>
             )}
             <input
-              id='uni'
-              name='org'
-              type='text'
-              placeholder='College/Organisation'
+              id="uni"
+              name="org"
+              type="text"
+              placeholder="College/Organisation"
               onChange={this.handleChange}
               noValidate
             />
             {errors.org.length > 0 && (
-              <span className='error'>{errors.org}</span>
+              <span className="error">{errors.org}</span>
             )}
-            <button className='btn btn-primary' type='submit'>
+            <button className="btn btn-primary" type="submit">
               Register
             </button>
           </form>

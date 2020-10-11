@@ -69,3 +69,6 @@
 [1005/152110.245:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1005/160034.389:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1005/160627.820:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1012/002134.136:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1012/004219.988:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1012/005041.421:ERROR:crash_report_database_win.cc(457)] unexpected header

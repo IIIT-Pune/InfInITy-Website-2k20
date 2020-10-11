@@ -13,53 +13,53 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div className='container-snap'>
-          <div className='wrapper-snap'>
-            <div className='home cont'>
-              <section className='landing'>
+        <div className="container-snap">
+          <div className="wrapper-snap">
+            <div className="home cont">
+              <section className="landing">
                 <img
-                  className='--typography'
-                  src={require('../assets/img/Typography.png')}
-                  alt=''
+                  className="--typography"
+                  src={require("../assets/img/Typography.png")}
+                  alt=""
                 />
 
                 <img
-                  className='--year'
-                  src={require('../assets/img/2k20.png')}
-                  alt=''
+                  className="--year"
+                  src={require("../assets/img/2k20.png")}
+                  alt=""
                 />
 
-                <span className='--hosted'>Hosted On</span>
+                <span className="--hosted">Hosted On</span>
                 <img
-                  className='--codechefTypo'
-                  src={require('../assets/img/Codechef.png')}
-                  alt=''
+                  className="--codechefTypo"
+                  src={require("../assets/img/Codechef.png")}
+                  alt=""
                 />
 
                 <img
-                  className='--DateTypo'
-                  src={require('../assets/img/Date.png')}
-                  alt=''
+                  className="--DateTypo"
+                  src={require("../assets/img/Date.png")}
+                  alt=""
                 />
               </section>
             </div>
           </div>
-          <div className='wrapper-snap'>
+          <div className="wrapper-snap">
             <FeedbackModal />
           </div>
 
-          <div className='wrapper-snap'>
+          <div className="wrapper-snap" id="registration">
             <Registration />
           </div>
 
-          <div className='wrapper-snap'>
+          <div className="wrapper-snap">
             <LiveStatsComponent />
           </div>
-          <div className='wrapper-snap'>
-            <div className='home cont'>
-              <section className='about'>
-                <h2 id='abt_h2'>About</h2>
-                <div className='content'>
+          <div className="wrapper-snap">
+            <div className="home cont">
+              <section className="about">
+                <h2 id="abt_h2">About</h2>
+                <div className="content">
                   <p>
                     InfInITy is IIIT Pune's annual flagship coding contest
                     hosted every year on Codechef. A 3 hour coding contest
@@ -79,7 +79,7 @@ class Home extends Component {
               </section>
             </div>
           </div>
-          <div className='wrapper-snap'>
+          <div className="wrapper-snap">
             <Footer />
           </div>
         </div>
