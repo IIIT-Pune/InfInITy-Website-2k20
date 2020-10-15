@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../assets/scss/questioncard.scss';
 import questions from '../shared/Questions_2k19';
-import image from '../assets/img/game-of-thrones-daenerys-targaryen-png-clipart.jpg';
+
 class QuesCard extends Component {
   constructor(props) {
     super(props);
