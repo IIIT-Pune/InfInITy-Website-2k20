@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {countries} from './countries';
 import { baseUrl } from '../shared/baseUrl';
+
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
@@ -111,6 +112,7 @@ class Registration extends Component {
   };
 
   render() {
+    console.log(typeof(countries[0].name));
     const { errors } = this.state;
     return (
       <div className="registration">
@@ -175,10 +177,11 @@ class Registration extends Component {
                   Select Country
                 </option>
                 {countries.map((country) => (
-                  <option key={country.code}>{country.name}</option>
+                  <option value={country.name} key={country.code}>{country.name}</option>
                 ))}
               </select>
-            </div>
+            </div> 
+             
             {errors.country.length > 0 && (
               <span className="error">{errors.country}</span>
             )}
