@@ -56,7 +56,7 @@ class Previously extends Component {
                   <p>Input: </p>
                   <ul style={{ marginLeft: '20px' }}>
                     {quesobj.example[0].map((inp) => {
-                      return <li>{ReactHtmlParser(inp)}</li>;
+                      return <div>{ReactHtmlParser(inp)}</div>;
                     })}
                   </ul>
                 </p>
@@ -64,7 +64,7 @@ class Previously extends Component {
                   <p>Output: </p>
                   <ul style={{ marginLeft: '20px' }}>
                     {quesobj.example[1].map((con) => {
-                      return <li>{ReactHtmlParser(con)}</li>;
+                      return <div>{ReactHtmlParser(con)}</div>;
                     })}
                   </ul>
                 </p>
