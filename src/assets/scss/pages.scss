@@ -10,7 +10,8 @@
     height: 100%;
 
     &.landing {
-      background-color: black;
+      background-color: rgba(71, 36, 0, 0.5);
+      background-blend-mode: multiply;
       background-image: url('../img/landing.jpeg');
       background-attachment: fixed;
       background-repeat: no-repeat;
