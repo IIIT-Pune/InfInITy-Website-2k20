@@ -29,18 +29,18 @@ class Home extends Component {
                   alt=""
                 />
 
-                <span className="--hosted">Hosted On</span>
+                <img
+                  className="--DateTypo"
+                  src={require("../assets/img/Date.png")}
+                  alt=""
+                />
+
                 <img
                   className="--codechefTypo"
                   src={require("../assets/img/Codechef.png")}
                   alt=""
                 />
 
-                <img
-                  className="--DateTypo"
-                  src={require("../assets/img/Date.png")}
-                  alt=""
-                />
               </section>
             </div>
           </div>

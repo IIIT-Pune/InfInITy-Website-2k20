@@ -7,14 +7,16 @@
     align-items: center;
     justify-content: start;
     text-align: center;
-    width: 100vw;
+    height: 100%;
 
     &.landing {
-      background-color: black;
-      background-image: url('../img/landing.png');
+      background-color: rgba(71, 36, 0, 0.5);
+      background-blend-mode: multiply;
+      background-image: url('../img/landing.jpeg');
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
       color: white;
 
       min-height: 97vh;
@@ -22,6 +24,8 @@
       text-align: right;
       padding: 5rem 0;
       display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
       flex-direction: column;
 
       filter: sepia(10%);
@@ -29,29 +33,33 @@
       .--typography {
         max-width: 34vw;
         margin-bottom: 3rem;
+        margin-right: 3rem;
         filter: sepia(30%);
       }
 
       .--year {
         max-width: 8vw;
-
+        margin-right: 3rem;
         margin-bottom: 3rem;
       }
 
       .--hosted {
         display: block;
         font-size: 1rem;
-        margin: 3rem 0;
+        margin: 3rem;
       }
 
       .--codechefTypo {
         max-width: 18vw;
         margin-bottom: 0.75rem;
+        margin-right: 3rem;
         filter: sepia(30%);
       }
 
       .--DateTypo {
         max-width: 16vw;
+        margin-bottom: 3em;
+        margin-right: 3rem;
         filter: sepia(40%);
       }
     }
@@ -204,7 +212,7 @@
   min-height: 97vh;
   max-height: max-content;
   padding: 3rem;
-  background-color: #9fb5cb;
+  background-color:  #9fb5cb;
   background-image: url('../img/rv.png');
   background-position: bottom right;
   background-repeat: no-repeat;
