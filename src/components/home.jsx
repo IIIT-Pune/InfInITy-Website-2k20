@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../assets/scss/pages.scss';
-import '../assets/scss/test.css';
+import '../assets/scss/snap.css';
 import Footer from './footerComponent';
-import LiveStatsComponent from './LiveStatsComponent';
 import Registration from './registration';
 import FeedbackModal from './feedbackModal';
+import Ourteam from './Ourteam';
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -48,12 +49,8 @@ class Home extends Component {
             <FeedbackModal />
           </div>
 
-          <div className="wrapper-snap" id="registration">
+          <div className="wrapper-snap" >
             <Registration />
-          </div>
-
-          <div className="wrapper-snap">
-            <LiveStatsComponent />
           </div>
           <div className="wrapper-snap">
             <div className="home cont">
@@ -73,11 +70,12 @@ class Home extends Component {
                     experts. Anyone having a knack for coding is encouraged to
                     participate.
                   </p>
-                  <br />
-                  <h3>Team</h3>
                 </div>
               </section>
             </div>
+          </div>
+          <div className="wrapper-snap">
+           <Ourteam/>
           </div>
           <div className="wrapper-snap">
             <Footer />

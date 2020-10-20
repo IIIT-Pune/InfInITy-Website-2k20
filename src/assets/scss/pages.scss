@@ -11,30 +11,30 @@
 
     &.landing {
       background-color: black;
-      background-image: url('../img/landing.png');
+      background-image: url('../img/bg_alt_2.png');
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
       color: white;
 
-      min-height: 97vh;
+      min-height: 100vh;
       max-height: max-content;
       text-align: right;
       padding: 5rem 0;
       display: flex;
       flex-direction: column;
 
-      filter: sepia(10%);
+      filter: sepia(10%) brightness(1.2);
 
       .--typography {
         max-width: 34vw;
         margin-bottom: 3rem;
-        filter: sepia(30%);
+        filter: sepia(50%);
       }
 
       .--year {
         max-width: 8vw;
-
+        filter: sepia(50%);
         margin-bottom: 3rem;
       }
 
@@ -42,17 +42,18 @@
         display: block;
         font-size: 1rem;
         margin: 3rem 0;
+        filter: sepia(50%);
       }
 
       .--codechefTypo {
         max-width: 18vw;
         margin-bottom: 0.75rem;
-        filter: sepia(30%);
+        filter: sepia(50%);
       }
 
       .--DateTypo {
         max-width: 16vw;
-        filter: sepia(40%);
+        filter: sepia(50%);
       }
     }
 
@@ -75,9 +76,7 @@
 
       .content {
         position: relative;
-        height: 100%;
         width: 100%;
-        overflow: auto;
 
         p {
           text-align: left;
@@ -180,6 +179,8 @@
     &.about {
       background-size: 40%;
       padding: 1.5rem;
+      height: 97vh;
+      margin-bottom: 3vh;
 
       #abt_h2 {
         transform: none;
@@ -198,10 +199,17 @@
   }
 }
 
+// @media (max-width: 500px) {
+//   .home section {
+//     &.about {
+//       background-position: 0% 50%;
+//     }
+//   }
+// }
 //____________ Registration ____________
 
 .registration {
-  min-height: 97vh;
+  min-height: 100vh;
   max-height: max-content;
   padding: 3rem;
   background-color: #9fb5cb;
@@ -372,9 +380,16 @@
   }
 }
 
+@media (max-width: 640px) {
+  .registration {
+    align-items: center;
+  }
+}
+
 @media (max-width: 450px) {
   .registration {
-    background-size: 110% auto;
+    background-size: 400% auto;
+    background-position: -900px 100%;
     padding: 2rem 1rem;
     align-items: center;
 
@@ -382,6 +397,7 @@
       padding: 1.75rem 1.5rem;
       width: fit-content;
       font-size: 0.9rem;
+      border-radius: 20px;
 
       #reg_typography {
         max-width: 80vw;

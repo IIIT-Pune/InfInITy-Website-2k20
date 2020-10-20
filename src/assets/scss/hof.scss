@@ -22,7 +22,7 @@
   .cont {
     // min-width: max-content;
     max-height: min-content;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     background-color: #fffdf9;
     padding: 1.5rem;
@@ -31,7 +31,6 @@
     text-align: center;
     font-weight: 500;
     margin-bottom: 1rem;
-
     h3 {
       color: #635e5e;
     }
@@ -51,7 +50,7 @@
       width: 32ch;
       display: grid;
       grid-template-columns: 6rem auto;
-      column-gap: 3rem;
+      column-gap: 2rem;
 
       .profile {
         border-radius: 999px;
