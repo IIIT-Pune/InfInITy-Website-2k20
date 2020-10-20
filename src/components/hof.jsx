@@ -5,7 +5,6 @@ import { iiit, india, world } from './hof_Data';
 const Hall = () => {
   return (
     <div className="halloffame">
-      {/* <h2>Hall of Fame</h2> */}
       <div className="cont world">
         <h3>World #1</h3>
         <h4>The ones who knock</h4>
@@ -37,7 +36,7 @@ const Hall = () => {
       </div>
       <div className="cont india">
         <h3>India #1</h3>
-        <h4>The ones who knock</h4>
+        <h4>They cook the Bomb</h4>
         {india.map((person) => (
           <div key={person.name} className="winner">
             <img
@@ -66,7 +65,7 @@ const Hall = () => {
       </div>
       <div className="cont iiitp">
         <h3>IIIT Pune #1</h3>
-        <h4>The ones who knock</h4>
+        <h4>Say their Name</h4>
         {iiit.map((person) => (
           <div key={person.name} className="winner">
             <img

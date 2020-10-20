@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import '../assets/scss/ourteam.css';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import AOS from 'aos';
+// import AOS from 'aos';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function Ourteam() {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 2000,
+  //   });
+  // }, []);
   return (
     <div>
       <section id='team' class='team section-bg'>

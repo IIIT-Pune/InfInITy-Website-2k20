@@ -118,7 +118,7 @@ class Registration extends Component {
       <div className="registration">
         <div className="form-container">
           <img
-            id="typography"
+            id="reg_typography"
             src={require("../assets/img/registration.png")}
             alt=""
           />

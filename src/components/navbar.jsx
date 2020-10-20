@@ -18,15 +18,15 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink className='--item' to='/registration'>
+          <NavLink className='--item' to='/registration' aria-current='false'>
             <img src={require('../assets/img/asset_4.png')} alt='' />
             <div>Registration</div>
           </NavLink>
         </li>
         <li>
-          <NavLink className='--item' to='/ourteam'>
+          <NavLink className='--item' to='/livestats'>
             <img src={require('../assets/img/asset_3.png')} alt='' />
-            <div>Our Team</div>
+            <div>Live Stats</div>
           </NavLink>
         </li>
         <li>
