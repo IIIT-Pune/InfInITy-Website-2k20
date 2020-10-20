@@ -49,7 +49,7 @@ class Home extends Component {
             <FeedbackModal />
           </div>
 
-          <div className="wrapper-snap" >
+          <div className="wrapper-snap" id="registration">
             <Registration />
           </div>
           <div className="wrapper-snap">
