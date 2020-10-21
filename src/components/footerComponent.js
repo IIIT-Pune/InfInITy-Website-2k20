@@ -9,13 +9,13 @@ class Footer extends Component {
     return (
       <div>
         <footer id='footer'>
-          <div class='footer-top'>
-            <div class='container'>
-              <div class='row'>
-                <div class='col-lg-6 '>
-                  <div class='footer-info'>
+          <div className='footer-top'>
+            <div className='container'>
+              <div className='row'>
+                <div className='col-lg-6 '>
+                  <div className='footer-info'>
                     <h3>InfInIty 2k20 !</h3>
-                    <p class='pb-3'>
+                    <p className='pb-3'>
                       <em>
                         InfInITy is IIIT Pune's annual flagship coding contest
                         hosted every year on Codechef. A 3 hour coding contest
@@ -27,46 +27,46 @@ class Footer extends Component {
                     <p>
                       <strong>Email:</strong> infinity@iiitp.ac.in
                     </p>
-                    <div class='social-links mt-3'>
-                      <a href='#' class='twitter'>
-                        <i class='bx bxl-twitter'></i>
+                    <div className='social-links mt-3'>
+                      <a href='#' className='twitter'>
+                        <i className='bx bxl-twitter'></i>
                       </a>
-                      <a href='#' class='facebook'>
-                        <i class='bx bxl-facebook'></i>
+                      <a href='#' className='facebook'>
+                        <i className='bx bxl-facebook'></i>
                       </a>
-                      <a href='#' class='instagram'>
-                        <i class='bx bxl-instagram'></i>
+                      <a href='#' className='instagram'>
+                        <i className='bx bxl-instagram'></i>
                       </a>
-                      <a href='#' class='google-plus'>
-                        <i class='bx bxl-skype'></i>
+                      <a href='#' className='google-plus'>
+                        <i className='bx bxl-skype'></i>
                       </a>
-                      <a href='#' class='linkedin'>
-                        <i class='bx bxl-linkedin'></i>
+                      <a href='#' className='linkedin'>
+                        <i className='bx bxl-linkedin'></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class='col-lg-5 footer-links '>
+                <div className='col-lg-5 footer-links '>
                   <h4>Useful Links</h4>
                   <ul>
-                    <li class='footlink'>
-                      <i class='bx bx-chevron-right'></i> <a href='#'>Home</a>
+                    <li className='footlink'>
+                      <i className='bx bx-chevron-right'></i> <a href='#'>Home</a>
                     </li>
-                    <li class='footlink'>
-                      <i class='bx bx-chevron-right'></i>{' '}
+                    <li className='footlink'>
+                      <i className='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Registration</a>
                     </li>
-                    <li class='footlink'>
-                      <i class='bx bx-chevron-right'></i>{' '}
+                    <li className='footlink'>
+                      <i className='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Live Stats</a>
                     </li>
-                    <li class='footlink'>
-                      <i class='bx bx-chevron-right'></i>{' '}
+                    <li className='footlink'>
+                      <i className='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Previous Year Question Set</a>
                     </li>
-                    <li class='footlink'>
-                      <i class='bx bx-chevron-right'></i>{' '}
+                    <li className='footlink'>
+                      <i className='bx bx-chevron-right'></i>{' '}
                       <a href='#'>Hall of Fame</a>
                     </li>
                   </ul>
@@ -74,8 +74,8 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div class='container'>
-            <div class='copyright'>
+          <div className='container'>
+            <div className='copyright'>
               &copy; Copyright{' '}
               <strong>
                 <span>Infinity </span>
