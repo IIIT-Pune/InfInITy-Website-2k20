@@ -115,15 +115,6 @@ class FeedbackModal extends Component {
               <h5 className=' modal-title' id='exampleModalLabel'>
                 Feedback
               </h5>
-
-              <button
-                aria-label='Close'
-                className=' close'
-                type='button'
-                onClick={() => this.setModalOpen(!this.state.modalOpen)}
-              >
-                <span aria-hidden={true}>×</span>
-              </button>
             </div>
             <ModalBody>
               {' '}

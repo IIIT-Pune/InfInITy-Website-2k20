@@ -49,9 +49,16 @@ class QuesCard extends Component {
                         var urlnew = '/questions/' + obj.code;
                         return (window.location.href = urlnew);
                       }}
-                      style={{ backgroundImage: 'url(' + obj.url + ')' }}
+                      style={{
+                        backgroundImage: 'url(' + obj.url + ')',
+                        height: '100%',
+
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
+                      }}
                     >
-                      <figcaption>
+                      <figcaption style={{ padding: '20px' }}>
                         <h4>
                           {' '}
                           <span>Problem Code: {obj.code}</span>
@@ -72,10 +79,8 @@ class QuesCard extends Component {
           </div>
           <div
             style={{
-              backgroundColor: '#ba9a8e',
-              backgroundImage:
-                'linear-gradient(315deg, #ba9a8e 0%, #96705b 74%);',
-              borderRadius: '18px',
+              backgroundColor: 'white',
+              padding: '20px',
             }}
           >
             <div class='textparent'>
