@@ -21,15 +21,15 @@ const Hall = () => {
               <span>{person.org}</span>
             </span>
             <span className="social">
-              <a href={person.linkedin}>
+              {person.linkedin?<a href={person.linkedin}>
                 <img src={require('../assets/img/social_1.svg')} alt="" />
-              </a>
-              <a href={person.github}>
+              </a>:null}
+              {person.github?<a href={person.github}>
                 <img src={require('../assets/img/social_2.svg')} alt="" />
-              </a>
-              <a href={person.codechef}>
+              </a>:null}
+              {person.codechef?<a href={person.codechef}>
                 <img src={require('../assets/img/social_3.svg')} alt="" />
-              </a>
+              </a>:null}
             </span>
           </div>
         ))}
@@ -50,15 +50,16 @@ const Hall = () => {
               {person.org}
             </span>
             <span className="social">
-              <a href={person.linkedin}>
+              {person.linkedin?<a href={person.linkedin}>
                 <img src={require('../assets/img/social_1.svg')} alt="" />
-              </a>
-              <a href={person.github}>
+              </a>:null}
+              
+              {person.github?<a href={person.github}>
                 <img src={require('../assets/img/social_2.svg')} alt="" />
-              </a>
-              <a href={person.codechef}>
+              </a>:null}
+              {person.codechef?<a href={person.codechef}>
                 <img src={require('../assets/img/social_3.svg')} alt="" />
-              </a>
+              </a>:null}
             </span>
           </div>
         ))}
@@ -79,15 +80,16 @@ const Hall = () => {
               {person.org}
             </span>
             <span className="social">
-              <a href={person.linkedin}>
+              {person.linkedin?<a href={person.linkedin}>
                 <img src={require('../assets/img/social_1.svg')} alt="" />
-              </a>
-              <a href={person.github}>
+              </a>:null}
+              
+              {person.github?<a href={person.github}>
                 <img src={require('../assets/img/social_2.svg')} alt="" />
-              </a>
-              <a href={person.codechef}>
+              </a>:null}
+              {person.codechef?<a href={person.codechef}>
                 <img src={require('../assets/img/social_3.svg')} alt="" />
-              </a>
+              </a>:null}
             </span>
           </div>
         ))}
