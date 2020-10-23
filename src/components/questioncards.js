@@ -57,30 +57,58 @@ class QuesCard extends Component {
                         backgroundSize: 'cover',
                       }}
                     >
-                      <figcaption style={{ padding: '20px' }}>
-                        <h4 style={{ marginBottom: '20px' }}>
-                          {' '}
-                          <span
-                            style={{ whiteSpace: 'nowrap', fontSize: '26px' }}
+                      {' '}
+                      <div id='overlay'>
+                        <figcaption style={{ padding: '20px' }}>
+                          <h4
+                            style={{
+                              marginBottom: '20px',
+                              textAlign: 'center',
+                            }}
                           >
-                            Problem Code: {obj.code}
-                          </span>
-                        </h4>
-                        <p
-                          style={{
-                            fontWeight: 'bolder',
-                            fontSize: '25px',
-                          }}
-                        >
-                          {obj.heading}
-                        </p>
-                        <p style={{ fontWeight: 'bold', fontSize: '20px' }}>
-                          Successfull Submissions : {obj.successfulSub}
-                        </p>
-                        <p style={{ fontWeight: 'bold', fontSize: '20px' }}>
-                          Accuracy : {obj.accuracy}
-                        </p>
-                      </figcaption>
+                            {' '}
+                            <span
+                              style={{
+                                fontSize: '26px',
+                                marginBottom: '20px',
+                              }}
+                            >
+                              Problem Code
+                              <br /> {obj.code}
+                            </span>
+                          </h4>
+                          <p
+                            style={{
+                              fontWeight: 'bolder',
+                              fontSize: '25px',
+                              marginBottom: '20px',
+                              textAlign: 'center',
+                              backgroundColor: 'rgba($primary, 0.5)',
+                            }}
+                          >
+                            {obj.heading}
+                          </p>
+                          <p
+                            style={{
+                              fontWeight: 'bold',
+                              fontSize: '23px',
+                              marginBottom: '20px',
+                              textAlign: 'center',
+                            }}
+                          >
+                            Successfull Submissions <br /> {obj.successfulSub}
+                          </p>
+                          <p
+                            style={{
+                              fontWeight: 'bold',
+                              fontSize: '23px',
+                              textAlign: 'center',
+                            }}
+                          >
+                            Accuracy <br /> {obj.accuracy}
+                          </p>
+                        </figcaption>
+                      </div>
                     </figure>
                   </a>
                 </div>
