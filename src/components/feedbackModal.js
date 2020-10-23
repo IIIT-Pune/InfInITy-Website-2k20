@@ -29,7 +29,7 @@ class FeedbackModal extends Component {
     this.setModalOpen = this.setModalOpen.bind(this);
   }
   handleSubmit(event) {
-    alert('Thank you for your valuable time .Your feeback has received ');
+    alert('Thank you for your valuable time. Your feeback has received ');
     axios.post(baseUrl + 'feedback', {
       name: this.state.name,
       message: this.state.message,
@@ -89,10 +89,10 @@ class FeedbackModal extends Component {
             Give Feedback
           </Button> */}
 
-          <div class='usrp-fb-1'>
+          <div className='usrp-fb-1'>
             <i>
               <svg
-                class='svg-icon'
+                className='svg-icon'
                 viewBox='0 0 20 20'
                 style={{ fill: 'white' }}
               >
@@ -100,7 +100,7 @@ class FeedbackModal extends Component {
               </svg>
             </i>
             <div
-              class='usrp-fb-title'
+              className='usrp-fb-title'
               onClick={() => this.setModalOpen(!this.state.modalOpen)}
             >
               Give Feedback
@@ -119,7 +119,7 @@ class FeedbackModal extends Component {
             <ModalBody>
               {' '}
               <div className='col'>
-                <h6>Share your thoughts or Report problems</h6>
+                <h6>Share your thouhts/feedback. We are all ears!</h6>
                 <Form onSubmit={this.handleSubmit}>
                   <FormGroup row>
                     <Label htmlFor='name' md={3}>

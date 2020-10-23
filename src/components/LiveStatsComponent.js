@@ -382,10 +382,10 @@ class LiveStatsComponent extends React.Component {
         // Render a countdown
         return (
           <div className=' size1 '>
-            <img
+            {/* <img
               src='https://img3.goodfon.com/wallpaper/big/3/66/lego-breaking-bad-walter.jpg'
               className='bg-img1'
-            ></img>
+            ></img> */}
             <div className='row-countdown '>
               <div className='flex-column '>
                 <div className=' d-flex justify-content-center count-title mt-5'>

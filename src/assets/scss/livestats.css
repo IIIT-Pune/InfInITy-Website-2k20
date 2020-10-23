@@ -153,28 +153,38 @@
 
 
 
-.bg-img1 {
-  width: 100%;
+/* .bg-img1 {
+  -width: 100vw;
   height: 100vh;
-}
+} */
 .size1 {
   position: relative;
-  text-align: center; 
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://img3.goodfon.com/wallpaper/big/3/66/lego-breaking-bad-walter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
 }
-.count-title{
+
+.count-title {
   color: white;
   font-size: 30px;
-  font-family:  sans-serif;
-  font-weight:bold ;
+  font-family: sans-serif;
+  font-weight: bold;
 }
+
 .how-countdown {
   background-color: #fff;
   border-radius: 18px;
 }
-.size2{
+
+.size2 {
   width: 80px;
   height: 90px;
 }
+
 .l1-txt3 {
   font-family: Montserrat-Bold;
   font-size: 36px;
@@ -183,6 +193,7 @@
   padding-bottom: 9px;
   font-weight: bold;
 }
+
 .l1-txt2 {
   font-family: Montserrat-Bold;
   font-size: 16px;
@@ -191,9 +202,10 @@
   padding-bottom: 9px;
   font-weight: bold;
 }
-.row-countdown{
-  top:20%;
+
+.row-countdown {
+  top: 20%;
   justify-content: center;
-   position: absolute;
+  position: absolute;
   width: 100%;
 }

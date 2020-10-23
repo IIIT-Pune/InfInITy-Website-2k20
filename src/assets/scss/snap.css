@@ -4,7 +4,7 @@ overflow-x: hidden;
 height: 100%;
   scroll-snap-type:y proximity;
   /* Reserve space for header and additional space so above page are visible a bit*/ 
-  scroll-padding-bottom:  25px;
+  scroll-padding-bottom:  30px;
 
   position: absolute;
 
