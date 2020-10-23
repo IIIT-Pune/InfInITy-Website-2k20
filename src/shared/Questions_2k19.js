@@ -15,7 +15,7 @@ const questions = [
     successfulSub: `762`,
     accuracy: `55.26`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1908`,
-    url: `https://i.pinimg.com/originals/fe/00/dd/fe00dde4baa1998d0bf91589784fd255.png`,
+    url: `https://www.wallpapertip.com/wmimgs/47-477304_stark-sigil-wallpaper.png`,
   },
 
   {
@@ -48,34 +48,7 @@ const questions = [
     successfulSub: `308`,
     accuracy: `27.22`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1912`,
-    url: `https://cutewallpaper.org/21/targaryen-background/Targaryen-background-2-Background-Check-All.jpg`,
-  },
-  {
-    code: `INF1910`,
-    heading: `Battle of the Blackwater`,
-    description:
-      '<p>The Battle of Blackwater Bay has just gotten over. There are hundreds of Stannis`s soldiers taken as prisoners by the Lannisters .These are denoted by <strong>N</strong>.<br/><br/>Joffrey has assigned the task of executing them to the Hound. The Hound has an idea. He makes the N prisoners numbered <strong> 1 , 2 , 3 </strong>upto N stand in a circle and places a sword in the hand of Prisoner <strong>1</strong>. He tells him to kill Prisoner <strong>2</strong> and pass the sword to Prisoner <strong>3</strong> , who in turn kills Prisoner <strong>4</strong> and passes his sword to Prisoner 5 and so on. This goes on until there is only one man left and the Hound then executes the last Prisoner.<br/><br/>Tyrion, however had asked the Hound to make a note of the order in which the Prisoners died and the Hound forgot to do so.<br/><br/>Given <strong>N</strong>and <strong>Q</strong> queries, for each query q<sub>i</sub> for 1 ≤ i ≤ Q , find the q<sub>i</sub><sup>th</sup> prisoner to die.<br/></p',
-    input: [
-      `First line contains an integer T, number of testcases. Then the testcases follow.`,
-      `Each testcase contains of a single line of input, two space separated integers N,Q.`,
-      'Q  lines follow. Each line contains a single integer q<sub>i</sub>',
-    ],
-    output: `<p>For each value of q<sub>i</sub> , output the number of the q<sub>i</sub><sup>th</sup> prisoner to die.</p>`,
-    constraints: [
-      `1 ≤ T ≤ 10`,
-      `1 ≤ N ≤ 10^5`,
-      `1 ≤ K ≤ 10^5`,
-      `1 ≤ q<sub>i</sub> ≤ N`,
-    ],
-    subtasks: ``,
-    example: [[`1<br/>8 2<br/>1<br/>8<br/>`], [`2<br/>1`]],
-    explanation: [
-      `The first prisoner to die was number 2 and the 8th prisoner to die was number 1.`,
-    ],
-    successfulSub: `150`,
-    accuracy: `31.8`,
-    reference: `https://www.codechef.com/INFY2019/problems/INF1910`,
-    url: `https://c4.wallpaperflare.com/wallpaper/192/843/629/house-lannister-game-of-thrones-lion-artwork-wallpaper-thumb.jpg`,
+    url: `https://lh3.googleusercontent.com/proxy/WkrH_R77Ydz12dq_4dzXGSc55pd-XYyBEEOQ0s9VxqYSnGRCC71VuMLRMlBwCe4pQliuTpqv4Ae5ORZeg1DrgXB3wfC6ATCGPbv0Y8qTlo6lfldrPL2QgN8Wz5f1Z1UUU0vWej9P3YkTvM-rfzQ8HU6HQVhobOw8aQ`,
   },
   {
     code: `INF1900`,
@@ -136,8 +109,36 @@ const questions = [
     successfulSub: `15`,
     accuracy: `21.43`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1902`,
-    url: `https://c4.wallpaperflare.com/wallpaper/691/488/18/game-of-thrones-sigils-house-tyrell-wallpaper-thumb.jpg`,
+    url: `https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/875ffd2e-f631-4bf9-98dc-09a20cb67a69/d5cuv0j-f4e456a3-e052-449b-aa29-6ef4e01649bf.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvODc1ZmZkMmUtZjYzMS00YmY5LTk4ZGMtMDlhMjBjYjY3YTY5XC9kNWN1djBqLWY0ZTQ1NmEzLWUwNTItNDQ5Yi1hYTI5LTZlZjRlMDE2NDliZi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.KWvTr_FA85jBSoMp87bQPriQHLTMQ1J7fXZ_WliHCY0`,
   },
+  {
+    code: `INF1910`,
+    heading: `Battle of the Blackwater`,
+    description:
+      '<p>The Battle of Blackwater Bay has just gotten over. There are hundreds of Stannis`s soldiers taken as prisoners by the Lannisters .These are denoted by <strong>N</strong>.<br/><br/>Joffrey has assigned the task of executing them to the Hound. The Hound has an idea. He makes the N prisoners numbered <strong> 1 , 2 , 3 </strong>upto N stand in a circle and places a sword in the hand of Prisoner <strong>1</strong>. He tells him to kill Prisoner <strong>2</strong> and pass the sword to Prisoner <strong>3</strong> , who in turn kills Prisoner <strong>4</strong> and passes his sword to Prisoner 5 and so on. This goes on until there is only one man left and the Hound then executes the last Prisoner.<br/><br/>Tyrion, however had asked the Hound to make a note of the order in which the Prisoners died and the Hound forgot to do so.<br/><br/>Given <strong>N</strong>and <strong>Q</strong> queries, for each query q<sub>i</sub> for 1 ≤ i ≤ Q , find the q<sub>i</sub><sup>th</sup> prisoner to die.<br/></p',
+    input: [
+      `First line contains an integer T, number of testcases. Then the testcases follow.`,
+      `Each testcase contains of a single line of input, two space separated integers N,Q.`,
+      'Q  lines follow. Each line contains a single integer q<sub>i</sub>',
+    ],
+    output: `<p>For each value of q<sub>i</sub> , output the number of the q<sub>i</sub><sup>th</sup> prisoner to die.</p>`,
+    constraints: [
+      `1 ≤ T ≤ 10`,
+      `1 ≤ N ≤ 10^5`,
+      `1 ≤ K ≤ 10^5`,
+      `1 ≤ q<sub>i</sub> ≤ N`,
+    ],
+    subtasks: ``,
+    example: [[`1<br/>8 2<br/>1<br/>8<br/>`], [`2<br/>1`]],
+    explanation: [
+      `The first prisoner to die was number 2 and the 8th prisoner to die was number 1.`,
+    ],
+    successfulSub: `150`,
+    accuracy: `31.8`,
+    reference: `https://www.codechef.com/INFY2019/problems/INF1910`,
+    url: `https://c4.wallpaperflare.com/wallpaper/192/843/629/house-lannister-game-of-thrones-lion-artwork-wallpaper-thumb.jpg`,
+  },
+
   {
     code: `INF1906`,
     heading: `A Faceless Mission`,
@@ -208,7 +209,7 @@ const questions = [
     successfulSub: `8`,
     accuracy: `18.6`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1906`,
-    url: `https://c4.wallpaperflare.com/wallpaper/157/643/620/game-of-thrones-house-martell-wallpaper-preview.jpg`,
+    url: `https://i.pinimg.com/originals/32/cd/f4/32cdf42b1345f768a5ab70215df0a9ef.jpg`,
   },
   {
     code: `INF1914`,
@@ -277,7 +278,7 @@ const questions = [
     successfulSub: `8`,
     accuracy: `32`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1914`,
-    url: `https://i.pinimg.com/originals/a1/32/ff/a132ffa245aa4723d112577ae7a401f4.jpg`,
+    url: `https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMUIorVyhVLFTFOe6YNkLks31lFb004n304A&usqp=CAU`,
   },
   {
     code: `INF1904`,
@@ -352,7 +353,7 @@ const questions = [
     successfulSub: `3`,
     accuracy: `9.38`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1904`,
-    url: `https://wallpaperaccess.com/full/567065.jpg`,
+    url: `https://c4.wallpaperflare.com/wallpaper/741/137/161/game-of-thrones-house-greyjoy-sigils-wallpaper-preview.jpg`,
   },
 ];
 

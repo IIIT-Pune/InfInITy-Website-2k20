@@ -43,7 +43,7 @@ class QuesCard extends Component {
                   class='col-lg-3 animate__animated animate__bounceIn'
                   style={{ padding: '60px' }}
                 >
-                  <a href='#'>
+                  <a href='#' classname='figclass'>
                     <figure
                       onClick={(event) => {
                         var urlnew = '/questions/' + obj.code;
@@ -52,22 +52,32 @@ class QuesCard extends Component {
                       style={{
                         backgroundImage: 'url(' + obj.url + ')',
                         height: '100%',
-
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
                       }}
                     >
                       <figcaption style={{ padding: '20px' }}>
-                        <h4>
+                        <h4 style={{ marginBottom: '20px' }}>
                           {' '}
-                          <span>Problem Code: {obj.code}</span>
+                          <span
+                            style={{ whiteSpace: 'nowrap', fontSize: '26px' }}
+                          >
+                            Problem Code: {obj.code}
+                          </span>
                         </h4>
-                        <p>{obj.heading}</p>
-                        <p style={{ fontWeight: 'bolder' }}>
+                        <p
+                          style={{
+                            fontWeight: 'bolder',
+                            fontSize: '25px',
+                          }}
+                        >
+                          {obj.heading}
+                        </p>
+                        <p style={{ fontWeight: 'bold', fontSize: '20px' }}>
                           Successfull Submissions : {obj.successfulSub}
                         </p>
-                        <p style={{ fontWeight: 'bolder' }}>
+                        <p style={{ fontWeight: 'bold', fontSize: '20px' }}>
                           Accuracy : {obj.accuracy}
                         </p>
                       </figcaption>
