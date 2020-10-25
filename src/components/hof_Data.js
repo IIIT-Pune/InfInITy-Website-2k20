@@ -31,7 +31,7 @@ export const india = [
   {
     name: "Shubham Atri",
     org: "IIT Bombay",
-    img: "codechef.jpeg",
+    img: "shubham.png",
     linkedin: "https://www.linkedin.com/in/shubham-atri-2455a91a7/",
     github: "",
     codechef: "https://www.codechef.com/users/shubham__12",
