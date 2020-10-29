@@ -361,7 +361,12 @@ class LiveStatsComponent extends React.Component {
             </div>
           </div>
         );
-      } else return <div>...Loading</div>;
+      } else return (
+        <div className={`loader notloaded`}>
+          <img src={require("../assets/img/beeeee.gif")} alt="preloader"></img>
+          <span>Loading</span>
+        </div>
+      );
     };
 
     var starcolor = [
@@ -373,7 +378,8 @@ class LiveStatsComponent extends React.Component {
       '#FF7F00',
       '#D0011B',
     ];
-    let time = new Date(2020, 9, 28, 8, 30, 0);
+    let time = new Date(2020, 10, 10, 8, 30, 0);
+    // let time=Date.now()+5000;
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
       if (completed) {
         // Render a complete state
