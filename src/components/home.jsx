@@ -39,7 +39,12 @@ class Home extends Component {
 
                 <img
                   className="--DateTypo"
-                  src={require("../assets/img/Date.png")}
+                  src={require("../assets/img/date.png")}
+                  alt=""
+                />
+                <img
+                  className="--TimeTypo"
+                  src={require("../assets/img/time.png")}
                   alt=""
                 />
               </section>
