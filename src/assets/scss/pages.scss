@@ -42,17 +42,25 @@
         display: block;
         font-size: 1rem;
         margin: 3rem 0;
+        margin-top: 0;
         filter: sepia(50%);
       }
 
       .--codechefTypo {
         max-width: 18vw;
-        margin-bottom: 0.75rem;
         filter: sepia(50%);
       }
 
       .--DateTypo {
-        max-width: 16vw;
+        max-width: 20vw;
+        margin-top: .5rem;
+        margin-left: 2rem;
+        filter: sepia(50%);
+      }
+
+      .--TimeTypo {
+        max-width: 15vw;
+        margin-top: .5rem;
         filter: sepia(50%);
       }
     }
