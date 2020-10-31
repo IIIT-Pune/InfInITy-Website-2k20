@@ -29,7 +29,7 @@ class FeedbackModal extends Component {
     this.setModalOpen = this.setModalOpen.bind(this);
   }
   handleSubmit(event) {
-    alert('Thank you for your valuable time. Your feeback has received ');
+    alert('Thank you for your valuable time. Your feeback has been recorded. ');
     axios.post(baseUrl + 'feedback', {
       name: this.state.name,
       message: this.state.message,
@@ -119,7 +119,7 @@ class FeedbackModal extends Component {
             <ModalBody>
               {' '}
               <div className='col'>
-                <h6>Share your thouhts/feedback. We are all ears!</h6>
+                <h6>Share your thoughts/feedback. We are all ears!</h6>
                 <Form onSubmit={this.handleSubmit}>
                   <FormGroup row>
                     <Label htmlFor='name' md={3}>

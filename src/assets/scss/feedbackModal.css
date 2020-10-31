@@ -1,8 +1,8 @@
 /* Base styles */
 .usrp-fb-1 {
-  position: fixed;
-  bottom: 0;
-  right: 17px;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
   z-index: 1;
   max-width: 50px;
   overflow: hidden;
