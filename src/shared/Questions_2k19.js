@@ -48,7 +48,7 @@ const questions = [
     successfulSub: `308`,
     accuracy: `27.22`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1912`,
-    url: `https://lh3.googleusercontent.com/proxy/WkrH_R77Ydz12dq_4dzXGSc55pd-XYyBEEOQ0s9VxqYSnGRCC71VuMLRMlBwCe4pQliuTpqv4Ae5ORZeg1DrgXB3wfC6ATCGPbv0Y8qTlo6lfldrPL2QgN8Wz5f1Z1UUU0vWej9P3YkTvM-rfzQ8HU6HQVhobOw8aQ`,
+    url: `https://nerdist.com/wp-content/uploads/2019/04/House-Targaryen-sigil.jpg`,
   },
   {
     code: `INF1900`,
