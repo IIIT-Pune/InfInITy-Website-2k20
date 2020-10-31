@@ -6,10 +6,12 @@ import { baseUrl } from '../shared/baseUrl';
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
-const validateForm = (errors) => {
+const validateForm = (errors,state) => {
   let valid = true;
   Object.values(errors).forEach((val) => val.length > 0 && (valid = false));
-  return valid;
+ if (state.name == '' || state.lastname == '' || state.username =='' ||state.country=='' ||state.email=='' || state.org=='' ){
+   valid=false;
+ } return valid;
 };
 
 class Registration extends Component {
@@ -92,7 +94,7 @@ class Registration extends Component {
   };
   handleSubmit = (event) => {
     event.preventDefault();
-    if (validateForm(this.state.errors)) {
+    if (validateForm(this.state.errors,this.state)) {
       alert(
         'Thank you for your valuable time . You have been successfully registered ! '
       );
@@ -104,15 +106,15 @@ class Registration extends Component {
         email: this.state.email,
         org: this.state.org
       });
-      console.info('Valid Form');
+     
     } else {
       alert('Please fill valid details !');
-      console.error('Invalid Form');
+    
     }
   };
 
   render() {
-    console.log(typeof(countries[0].name));
+  
     const { errors } = this.state;
     return (
       <div className="registration">

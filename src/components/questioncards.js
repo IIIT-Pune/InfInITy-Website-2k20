@@ -8,7 +8,6 @@ class QuesCard extends Component {
   }
 
   render() {
-    console.log(questions);
     return (
       <div class='mparent'>
         <div

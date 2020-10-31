@@ -378,7 +378,7 @@ class LiveStatsComponent extends React.Component {
       '#FF7F00',
       '#D0011B',
     ];
-    let time = new Date(2020, 10, 10, 8, 30, 0);
+    let time = new Date(2020, 10, 4, 21, 0, 0);
     // let time=Date.now()+5000;
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
       if (completed) {
