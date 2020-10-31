@@ -19,7 +19,7 @@ class Main extends Component {
     setTimeout(
       function () {
         this.setState({ isLoaded: true });
-        console.log(this.state.isLoaded);
+
       }.bind(this),
       5000
     );
@@ -31,10 +31,11 @@ class Main extends Component {
     };
     return (
       <div>
-        {/* <div className = {`loader ${!this.state.isLoaded ? "notloaded" : "loaded"}`}>
+        <div
+          className={`loader ${!this.state.isLoaded ? "notloaded" : "loaded"}`}>
           <img src={require("../assets/img/beeeee.gif")} alt="preloader"></img>
           <span>Decontaminating</span>
-        </div> */}
+        </div>
         <Switch location={this.props.location}>
           <Route exact path='/feedback' component={() => <FeedbackModal />} />
           <Route

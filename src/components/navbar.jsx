@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/scss/navbar.scss';
-import { NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   return (
@@ -18,10 +19,10 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          <a className="--item" href="/#registration" aria-current="false">
+          <Link className="--item" to="/#registration" aria-current="false">
             <img src={require("../assets/img/asset_4.png")} alt="" />
             <div>Registration</div>
-          </a>
+          </Link>
         </li>
         <li>
 
@@ -30,7 +31,7 @@ function Navbar() {
             <div>Live Stats</div>
           </NavLink>
         </li>
-        <li>
+        <li> 
           <NavLink className="--item" to="/previously">
             <img src={require("../assets/img/asset_6.png")} alt="" />
             <div>Previously</div>

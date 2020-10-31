@@ -42,6 +42,11 @@ class Home extends Component {
                   src={require("../assets/img/Date.png")}
                   alt=""
                 />
+                <img
+                  className="--TimeTypo"
+                  src={require("../assets/img/time.png")}
+                  alt=""
+                />
               </section>
             </div>
           </div>
@@ -49,7 +54,7 @@ class Home extends Component {
             <FeedbackModal />
           </div>
 
-          <div className="wrapper-snap" >
+          <div className="wrapper-snap" id="registration">
             <Registration />
           </div>
           <div className="wrapper-snap">
