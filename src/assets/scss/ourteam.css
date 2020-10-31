@@ -48,7 +48,7 @@
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 15.5px;
+  font-size: 18px;
   color: #111;
 }
 
@@ -97,7 +97,4 @@
 
 .section-title p {
   margin-bottom: 0;
-}
-#team{
-  padding-top: 3rem;
 }

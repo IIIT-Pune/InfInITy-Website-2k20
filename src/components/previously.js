@@ -13,14 +13,12 @@ class Previously extends Component {
   }
 
   render() {
-  
     var quesobj = {};
     for (var i = 0; i < questions.length; i++) {
       if (questions[i].code === this.props.code) {
         quesobj = questions[i];
       }
     }
-  
 
     return (
       <div>

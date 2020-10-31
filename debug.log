@@ -67,6 +67,7 @@
 [1004/180702.511:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1005/113412.821:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1005/152110.245:ERROR:crash_report_database_win.cc(428)] unexpected header
+<<<<<<< HEAD
 [1005/160034.389:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1005/160627.820:ERROR:crash_report_database_win.cc(428)] unexpected header
 [1012/002134.136:ERROR:crash_report_database_win.cc(457)] unexpected header
@@ -76,3 +77,6 @@
 [1029/195431.324:ERROR:crash_report_database_win.cc(457)] unexpected header
 [1029/231109.119:ERROR:crash_report_database_win.cc(457)] unexpected header
 [1031/195441.193:ERROR:crash_report_database_win.cc(457)] unexpected header
+=======
+[1005/213729.270:ERROR:crash_report_database_win.cc(428)] unexpected header
+>>>>>>> Mukhrit-main

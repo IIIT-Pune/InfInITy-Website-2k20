@@ -19,7 +19,6 @@ class Main extends Component {
     setTimeout(
       function () {
         this.setState({ isLoaded: true });
-
       }.bind(this),
       5000
     );
@@ -32,8 +31,9 @@ class Main extends Component {
     return (
       <div>
         <div
-          className={`loader ${!this.state.isLoaded ? "notloaded" : "loaded"}`}>
-          <img src={require("../assets/img/beeeee.gif")} alt="preloader"></img>
+          className={`loader ${!this.state.isLoaded ? 'notloaded' : 'loaded'}`}
+        >
+          <img src={require('../assets/img/beeeee.gif')} alt='preloader'></img>
           <span>Decontaminating</span>
         </div>
         <Switch location={this.props.location}>

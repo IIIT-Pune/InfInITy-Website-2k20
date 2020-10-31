@@ -55,7 +55,6 @@ const questions = [
     heading: `Gift a Number! `,
     description: `<p>Valyrian steel was invented in Valyria, and was used to make weapons and various other items of unparalleled quality. But times have changed, now numbers have more value than weapons. Tobho Mott, a blacksmith trained in Qohor is known to reforge valyrian steel. He has following information regarding units of Valyrian required to forge each number :<br/><br/>
 <strong>{8}</strong>  - 7 units<br/><br/>
-
     <strong>{0,6,9}</strong> - 6 units each<br/><br/>
     
     <strong> {2,3,5}</strong> - 5 units each<br/><br/>
@@ -115,11 +114,11 @@ const questions = [
     code: `INF1910`,
     heading: `Battle of the Blackwater`,
     description:
-      "<p>The Battle of Blackwater Bay has just gotten over. There are hundreds of Stannis`s soldiers taken as prisoners by the Lannisters .These are denoted by <strong>N</strong>.<br/><br/>Joffrey has assigned the task of executing them to the Hound. The Hound has an idea. He makes the N prisoners numbered <strong> 1 , 2 , 3 </strong>upto N stand in a circle and places a sword in the hand of Prisoner <strong>1</strong>. He tells him to kill Prisoner <strong>2</strong> and pass the sword to Prisoner <strong>3</strong> , who in turn kills Prisoner <strong>4</strong> and passes his sword to Prisoner 5 and so on. This goes on until there is only one man left and the Hound then executes the last Prisoner.<br/><br/>Tyrion, however had asked the Hound to make a note of the order in which the Prisoners died and the Hound forgot to do so.<br/><br/>Given <strong>N</strong>and <strong>Q</strong> queries, for each query q<sub>i</sub> for 1 ≤ i ≤ Q , find the q<sub>i</sub><sup>th</sup> prisoner to die.<br/></p",
+      '<p>The Battle of Blackwater Bay has just gotten over. There are hundreds of Stannis`s soldiers taken as prisoners by the Lannisters .These are denoted by <strong>N</strong>.<br/><br/>Joffrey has assigned the task of executing them to the Hound. The Hound has an idea. He makes the N prisoners numbered <strong> 1 , 2 , 3 </strong>upto N stand in a circle and places a sword in the hand of Prisoner <strong>1</strong>. He tells him to kill Prisoner <strong>2</strong> and pass the sword to Prisoner <strong>3</strong> , who in turn kills Prisoner <strong>4</strong> and passes his sword to Prisoner 5 and so on. This goes on until there is only one man left and the Hound then executes the last Prisoner.<br/><br/>Tyrion, however had asked the Hound to make a note of the order in which the Prisoners died and the Hound forgot to do so.<br/><br/>Given <strong>N</strong>and <strong>Q</strong> queries, for each query q<sub>i</sub> for 1 ≤ i ≤ Q , find the q<sub>i</sub><sup>th</sup> prisoner to die.<br/></p',
     input: [
       `First line contains an integer T, number of testcases. Then the testcases follow.`,
       `Each testcase contains of a single line of input, two space separated integers N,Q.`,
-      "Q  lines follow. Each line contains a single integer q<sub>i</sub>",
+      'Q  lines follow. Each line contains a single integer q<sub>i</sub>',
     ],
     output: `<p>For each value of q<sub>i</sub> , output the number of the q<sub>i</sub><sup>th</sup> prisoner to die.</p>`,
     constraints: [

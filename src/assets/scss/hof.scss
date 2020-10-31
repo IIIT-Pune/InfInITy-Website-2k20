@@ -17,12 +17,12 @@
   overflow-y: scroll;
   overflow-x: hidden;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 
   .cont {
     // min-width: max-content;
     max-height: min-content;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     background-color: #fffdf9;
     padding: 1.5rem;
@@ -50,7 +50,7 @@
       width: 32ch;
       display: grid;
       grid-template-columns: 6rem auto;
-      column-gap: 2rem;
+      column-gap: 3rem;
 
       .profile {
         border-radius: 999px;

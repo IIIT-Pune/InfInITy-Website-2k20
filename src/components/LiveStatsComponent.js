@@ -361,12 +361,16 @@ class LiveStatsComponent extends React.Component {
             </div>
           </div>
         );
-      } else return (
-        <div className={`loader notloaded`}>
-          <img src={require("../assets/img/beeeee.gif")} alt="preloader"></img>
-          <span>Loading</span>
-        </div>
-      );
+      } else
+        return (
+          <div className={`loader notloaded`}>
+            <img
+              src={require('../assets/img/beeeee.gif')}
+              alt='preloader'
+            ></img>
+            <span>Loading</span>
+          </div>
+        );
     };
 
     var starcolor = [
