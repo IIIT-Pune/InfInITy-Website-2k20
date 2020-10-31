@@ -19,7 +19,7 @@ class Main extends Component {
     setTimeout(
       function () {
         this.setState({ isLoaded: true });
-        console.log(this.state.isLoaded);
+
       }.bind(this),
       5000
     );

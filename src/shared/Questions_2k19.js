@@ -48,7 +48,7 @@ const questions = [
     successfulSub: `308`,
     accuracy: `27.22`,
     reference: `https://www.codechef.com/INFY2019/problems/INF1912`,
-    url: `https://lh3.googleusercontent.com/proxy/WkrH_R77Ydz12dq_4dzXGSc55pd-XYyBEEOQ0s9VxqYSnGRCC71VuMLRMlBwCe4pQliuTpqv4Ae5ORZeg1DrgXB3wfC6ATCGPbv0Y8qTlo6lfldrPL2QgN8Wz5f1Z1UUU0vWej9P3YkTvM-rfzQ8HU6HQVhobOw8aQ`,
+    url: `https://nerdist.com/wp-content/uploads/2019/04/House-Targaryen-sigil.jpg`,
   },
   {
     code: `INF1900`,
@@ -115,11 +115,11 @@ const questions = [
     code: `INF1910`,
     heading: `Battle of the Blackwater`,
     description:
-      '<p>The Battle of Blackwater Bay has just gotten over. There are hundreds of Stannis`s soldiers taken as prisoners by the Lannisters .These are denoted by <strong>N</strong>.<br/><br/>Joffrey has assigned the task of executing them to the Hound. The Hound has an idea. He makes the N prisoners numbered <strong> 1 , 2 , 3 </strong>upto N stand in a circle and places a sword in the hand of Prisoner <strong>1</strong>. He tells him to kill Prisoner <strong>2</strong> and pass the sword to Prisoner <strong>3</strong> , who in turn kills Prisoner <strong>4</strong> and passes his sword to Prisoner 5 and so on. This goes on until there is only one man left and the Hound then executes the last Prisoner.<br/><br/>Tyrion, however had asked the Hound to make a note of the order in which the Prisoners died and the Hound forgot to do so.<br/><br/>Given <strong>N</strong>and <strong>Q</strong> queries, for each query q<sub>i</sub> for 1 ≤ i ≤ Q , find the q<sub>i</sub><sup>th</sup> prisoner to die.<br/></p',
+      "<p>The Battle of Blackwater Bay has just gotten over. There are hundreds of Stannis`s soldiers taken as prisoners by the Lannisters .These are denoted by <strong>N</strong>.<br/><br/>Joffrey has assigned the task of executing them to the Hound. The Hound has an idea. He makes the N prisoners numbered <strong> 1 , 2 , 3 </strong>upto N stand in a circle and places a sword in the hand of Prisoner <strong>1</strong>. He tells him to kill Prisoner <strong>2</strong> and pass the sword to Prisoner <strong>3</strong> , who in turn kills Prisoner <strong>4</strong> and passes his sword to Prisoner 5 and so on. This goes on until there is only one man left and the Hound then executes the last Prisoner.<br/><br/>Tyrion, however had asked the Hound to make a note of the order in which the Prisoners died and the Hound forgot to do so.<br/><br/>Given <strong>N</strong>and <strong>Q</strong> queries, for each query q<sub>i</sub> for 1 ≤ i ≤ Q , find the q<sub>i</sub><sup>th</sup> prisoner to die.<br/></p",
     input: [
       `First line contains an integer T, number of testcases. Then the testcases follow.`,
       `Each testcase contains of a single line of input, two space separated integers N,Q.`,
-      'Q  lines follow. Each line contains a single integer q<sub>i</sub>',
+      "Q  lines follow. Each line contains a single integer q<sub>i</sub>",
     ],
     output: `<p>For each value of q<sub>i</sub> , output the number of the q<sub>i</sub><sup>th</sup> prisoner to die.</p>`,
     constraints: [
